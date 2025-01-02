@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="titleBar" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pos.Controller.CustomTitleBarApp">
+   <children>
+      <Button fx:id="closeButton" layoutX="556.0" layoutY="12.0" mnemonicParsing="false" onAction="#closewindow" prefHeight="26.0" prefWidth="29.0" style="-fx-background-radius: 50%; -fx-background-color: red;" text="X">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="minimizeButton" layoutX="514.0" layoutY="12.0" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="26.0" prefWidth="29.0" style="-fx-background-radius: 50%; -fx-background-color: green;" text="—">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="259.0" layoutY="2.0" prefHeight="50.0" prefWidth="123.0" text="ADD ITEM" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

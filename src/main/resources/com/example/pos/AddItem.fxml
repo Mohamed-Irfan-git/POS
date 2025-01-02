@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pos.Controller.AddItem">
+   <fx:include source="Additemtitlebar.fxml" />
+
+
+   <TextField fx:id="ITEMNAMEFIELD" layoutX="117.0" layoutY="181.0" prefHeight="27.0" prefWidth="230.0" style="-fx-border-color: grey;">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font></TextField>
+   <Label layoutX="24.0" layoutY="175.0" prefHeight="38.0" prefWidth="77.0" text="ITEM NAME :">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </Label>
+   <TextField fx:id="ITEMCODEFIELD" layoutX="117.0" layoutY="121.0" prefHeight="27.0" prefWidth="230.0" style="-fx-border-color: grey;">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font></TextField>
+   <Label layoutX="24.0" layoutY="115.0" prefHeight="38.0" prefWidth="77.0" text="ITEM CODE :">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="24.0" layoutY="294.0" prefHeight="38.0" prefWidth="101.0" text="CREDIT PRICE :">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </Label>
+   <TextField fx:id="CREDITPRICE" alignment="CENTER" layoutX="172.0" layoutY="313.0" prefHeight="27.0" prefWidth="166.0" style="-fx-border-color: grey;">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font></TextField>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="313.0" prefHeight="27.0" prefWidth="47.0" text="RS :">
+      <font>
+         <Font name="Arial Bold" size="15.0" />
+      </font>
+   </Label>
+   <TextField fx:id="INVOICEPRICE" alignment="CENTER" layoutX="172.0" layoutY="375.0" prefHeight="27.0" prefWidth="166.0" style="-fx-border-color: grey;">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font></TextField>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="371.0" prefHeight="27.0" prefWidth="47.0" text="RS :">
+      <font>
+         <Font name="Arial Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label layoutX="24.0" layoutY="369.0" prefHeight="38.0" prefWidth="101.0" text="INOICE PRICE :">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="24.0" layoutY="440.0" prefHeight="38.0" prefWidth="120.0" text="QUATATION PRICE :">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </Label>
+   <TextField fx:id="QUATATIONPRICE" alignment="CENTER" layoutX="173.0" layoutY="446.0" prefHeight="27.0" prefWidth="166.0" style="-fx-border-color: grey;">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font></TextField>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="446.0" prefHeight="27.0" prefWidth="47.0" text="RS :">
+      <font>
+         <Font name="Arial Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="ITEMNUMBERLABEL" alignment="CENTER" contentDisplay="CENTER" layoutX="453.0" layoutY="121.0" prefHeight="27.0" prefWidth="126.0" style="-fx-background-color: white; -fx-text-fill: green;" textAlignment="CENTER">
+      <font>
+         <Font name="Arial Bold" size="16.0" />
+      </font></Label>
+   <Button fx:id="CREATEBUTTON" layoutX="453.0" layoutY="274.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="132.0" style="-fx-background-color: green;" text="CREATE">
+      <font>
+         <Font name="Arial Bold" size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="CANCELBUTTON" layoutX="453.0" layoutY="357.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="132.0" style="-fx-background-color: red;" text="CANCEL">
+      <font>
+         <Font name="Arial Bold" size="15.0" />
+      </font>
+   </Button>
+   <TextField fx:id="LCFIELD" alignment="CENTER" layoutX="455.0" layoutY="229.0" prefHeight="27.0" prefWidth="126.0" style="-fx-border-color: grey;" text="00.00">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font></TextField>
+   <TextField fx:id="UNITFIELD" alignment="CENTER" layoutX="455.0" layoutY="181.0" prefHeight="27.0" prefWidth="126.0" style="-fx-border-color: grey;">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </TextField>
+   <Label layoutX="397.0" layoutY="175.0" prefHeight="38.0" prefWidth="47.0" text="UNIT :">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="403.0" layoutY="224.0" prefHeight="38.0" prefWidth="36.0" text="L/C :">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </Label>
+   <TextField fx:id="COSTFIELD" alignment="CENTER" layoutX="172.0" layoutY="248.0" prefHeight="27.0" prefWidth="166.0" style="-fx-border-color: grey;">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </TextField>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="248.0" prefHeight="27.0" prefWidth="47.0" text="RS :">
+      <font>
+         <Font name="Arial Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label layoutX="24.0" layoutY="243.0" prefHeight="38.0" prefWidth="101.0" text="COST PRICE">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="377.0" layoutY="115.0" prefHeight="38.0" prefWidth="57.0" text="ITEM NO :">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </Label>
+</AnchorPane>

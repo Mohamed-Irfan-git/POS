@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1323.0" style="-fx-background-color: black;"
+            xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.pos.Controller.Costamer">
+   <fx:include source="windowstitlebar.fxml"/>
+
+
+   <AnchorPane layoutX="21.0" layoutY="61.0" prefHeight="618.0" prefWidth="242.0" style="-fx-background-color: orange;">
+
+      <Button fx:id="createCusromerButton" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="73.0"
+              mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="195.0"
+              text="CREATE CUSTOMER" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Button>
+      <Button fx:id="costamerDetailButton" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="254.0"
+              mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="195.0"
+              text="CUSTOMER  DETAILS" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Button>
+      <Button fx:id="CustomerreportButton" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="443.0"
+              mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="195.0"
+              text="CUSTOMER REPORT" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="15.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Button>
+   </AnchorPane>
+   <AnchorPane focusTraversable="true" layoutX="373.0" layoutY="59.0" prefHeight="622.0" prefWidth="959.0">
+      <AnchorPane fx:id="anchorpaneCreatecostamer" layoutX="-53.0" layoutY="2.0" prefHeight="618.0" prefWidth="986.0"
+                  style="-fx-background-color: white; -fx-border-color: white; -fx-border-width: 5 5 5 5;"
+                  visible="false">
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="411.0" layoutY="22.0" prefHeight="42.0"
+                prefWidth="222.0" text="ADD CUSTOMER" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Bold" size="21.0"/>
+            </font>
+            <textFill>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.6893939682931611" startY="0.8522727092107137">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.6736842393875122" green="0.08982456475496292"
+                                  blue="0.08982456475496292"/>
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="1.0" green="1.0" blue="1.0"/>
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Label>
+         <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="63.0" layoutY="84.0" pickOnBounds="true"
+                    preserveRatio="true">
+            <Image url="@../../../New%20folder/user.png"/>
+         </ImageView>
+         <TextField alignment="CENTER" layoutX="244.0" layoutY="128.0" prefHeight="30.0" prefWidth="472.0"
+                    promptText="CUSTOMER NAME"
+                    style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 0 0 3 0;">
+            <font>
+               <Font name="Arial Bold" size="13.0"/>
+            </font>
+         </TextField>
+         <TextField alignment="CENTER" layoutX="244.0" layoutY="197.0" prefHeight="30.0" prefWidth="472.0"
+                    promptText="ADDRESS"
+                    style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 0 0 3 0;">
+            <font>
+               <Font name="Arial Bold" size="13.0"/>
+            </font>
+         </TextField>
+         <TextField alignment="CENTER" layoutX="61.0" layoutY="335.0" prefHeight="30.0" prefWidth="374.0"
+                    promptText="MAXMUM BALANCE"
+                    style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 0 0 3 0;">
+            <font>
+               <Font name="Arial Bold" size="13.0"/>
+            </font>
+         </TextField>
+         <TextField alignment="CENTER" layoutX="61.0" layoutY="259.0" prefHeight="30.0" prefWidth="365.0"
+                    promptText="TELEPHONE NUMBER"
+                    style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 0 0 3 0;">
+            <font>
+               <Font name="Arial Bold" size="13.0"/>
+            </font>
+         </TextField>
+         <TextField alignment="CENTER" layoutX="61.0" layoutY="403.0" prefHeight="30.0" prefWidth="374.0"
+                    promptText="MAXIMUM TIME DURATION"
+                    style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 0 0 3 0;">
+            <font>
+               <Font name="Arial Bold" size="13.0"/>
+            </font>
+         </TextField>
+         <RadioButton layoutX="61.0" layoutY="485.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="171.0"
+                      selected="true" text="MALE">
+            <font>
+               <Font name="Arial Bold" size="13.0"/>
+            </font>
+            <toggleGroup>
+               <ToggleGroup fx:id="Human1"/>
+            </toggleGroup>
+         </RadioButton>
+         <RadioButton layoutX="236.0" layoutY="485.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="234.0"
+                      text="FEMALE" toggleGroup="$Human1">
+            <font>
+               <Font name="Arial Bold" size="13.0"/>
+            </font>
+         </RadioButton>
+         <Button layoutX="726.0" layoutY="540.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="171.0"
+                 style="-fx-background-color: green;" text="CREATE" textFill="#efe9e9">
+            <font>
+               <Font name="Arial Bold" size="23.0"/>
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+         </Button>
+         <Line endX="129.800048828125" layoutX="504.0" layoutY="74.0" startX="-100.0" strokeWidth="5.0">
+            <stroke>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.28030305197744654">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.800000011920929" green="0.6874074339866638" blue="0.6874074339866638"/>
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8105263113975525" green="0.08405458182096481"
+                                  blue="0.08405458182096481"/>
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </stroke>
+         </Line>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorpanecostamerDetail" layoutX="-17.0" layoutY="2.0" prefHeight="618.0" prefWidth="923.0"
+                  style="-fx-background-color: white;" visible="false">
+         <TableView layoutX="-35.0" layoutY="-1.0" prefHeight="622.0" prefWidth="985.0"
+                    tableMenuButtonVisible="true">
+            <columns>
+               <TableColumn prefWidth="150.39996337890625"
+                            style="-fx-background-color: green; -fx-border-color: black; -fx-border-width: 0 2 2 0;"
+                            text="CUSTOMER NAME"/>
+               <TableColumn minWidth="0.0" prefWidth="228.00003051757812"
+                            style="-fx-border-width: 0 2 2 0; -fx-border-color: black; -fx-background-color: green;"
+                            text="ADDRESS"/>
+               <TableColumn prefWidth="203.199951171875"
+                            style="-fx-background-color: green; -fx-border-color: black; -fx-border-width: 0 2 2 0;"
+                            text="TELEPHIONE NUMBER"/>
+               <TableColumn minWidth="0.0" prefWidth="144.00006103515625"
+                            style="-fx-background-color: red; -fx-border-width: 0 2 2 0; -fx-border-color: black;"
+                            text="BALANCE"/>
+               <TableColumn minWidth="0.0" prefWidth="228.0001220703125"
+                            style="-fx-background-color: red; -fx-border-color: black; -fx-border-width: 0 2 2 0;"
+                            text="BALANCE NO OF DAY"/>
+            </columns>
+         </TableView>
+      </AnchorPane>
+      <ImageView fx:id="image" fitHeight="474.0" fitWidth="711.0" layoutX="214.0" layoutY="73.0" pickOnBounds="true"
+                 preserveRatio="true">
+         <image>
+            <Image url="@../../../New%20folder/employee.png"/>
+         </image>
+      </ImageView>
+   </AnchorPane>
+</AnchorPane>

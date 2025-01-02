@@ -1,0 +1,18 @@
+/* Set the font to bold and change the text size for all TableRow items */
+.table-row-cell {
+    -fx-text-fill: green;
+    -fx-font-size: 15px;     /* Changes the text size */
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial";
+
+}
+.table-row-cell:hover {
+    -fx-background-color: red;  /* Light gray on hover */
+}
+
+.table-row-cell:selected {
+    -fx-text-fill: white;  /* Font color when selected */
+    -fx-background-color: green;
+}
+
+

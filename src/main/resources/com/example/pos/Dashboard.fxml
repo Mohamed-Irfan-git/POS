@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-border-color: black; -fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pos.Controller.DashboardController">
+   <fx:include source="windowstitlebar.fxml" />
+
+   <HBox fx:id="emplyeeButton" layoutX="181.0" layoutY="84.0" prefHeight="94.0" prefWidth="234.0" style="-fx-background-color: rose;">
+      <ImageView fitHeight="96.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../New%20folder/employee.png" />
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="154.0" text="  EMPLOYEE" textAlignment="CENTER" textFill="#f4eaea">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </HBox>
+   <HBox fx:id="customerButton" layoutX="181.0" layoutY="191.0" prefHeight="94.0" prefWidth="234.0" style="-fx-background-color: rose;">
+      <children>
+         <ImageView fitHeight="96.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../New%20folder/customer.png" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="154.0" text="CUSTOMER" textAlignment="CENTER" textFill="#eae5e5">
+            <font>
+               <Font name="Arial Bold" size="21.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </HBox>
+   <HBox fx:id="supplierButton" layoutX="181.0" layoutY="313.0" prefHeight="94.0" prefWidth="234.0" style="-fx-background-color: rose;">
+      <children>
+         <ImageView fitHeight="96.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../New%20folder/supplier.png" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="151.0" text="SUPPLIER" textAlignment="CENTER" textFill="#f4f1f1">
+            <font>
+               <Font name="Arial Bold" size="21.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </HBox>
+   <Line endX="1158.0" endY="7.62939453125E-6" layoutX="122.0" layoutY="48.0" startX="-122.0" startY="7.62939453125E-6" strokeDashOffset="50.0" strokeLineJoin="BEVEL" strokeMiterLimit="50.0" strokeWidth="10.0">
+      <fill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.19249512255191803" green="0.07309941202402115" blue="0.7894737124443054" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+      <stroke>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color green="0.11141999810934067" blue="0.7799999713897705" opacity="0.4000000059604645" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </stroke>
+   </Line>
+   <Line endX="1158.0" endY="7.62939453125E-6" layoutX="132.0" layoutY="68.0" startX="-132.00001525878906" startY="7.62939453125E-6" strokeDashOffset="50.0" strokeLineJoin="BEVEL" strokeMiterLimit="50.0" strokeWidth="10.0">
+      <fill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.19249512255191803" green="0.07309941202402115" blue="0.7894737124443054" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+      <stroke>
+         <LinearGradient endX="1.0" endY="1.0" startX="0.5946969715031711" startY="0.8636363527991555">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.08910000324249268" green="0.10422556847333908" blue="0.8100000023841858" opacity="0.4000000059604645" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </stroke>
+   </Line>
+   <HBox fx:id="grnButton" layoutX="181.0" layoutY="448.0" prefHeight="94.0" prefWidth="234.0" style="-fx-background-color: rose;">
+      <children>
+         <ImageView fitHeight="96.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../New%20folder/bill_5492064.png" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="151.0" text="GRN" textAlignment="CENTER" textFill="#f7f1f1">
+            <font>
+               <Font name="Arial Bold" size="21.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </HBox>
+   <HBox fx:id="remiButton" layoutX="830.0" layoutY="84.0" prefHeight="94.0" prefWidth="234.0" style="-fx-background-color: rose;">
+      <children>
+         <ImageView fitHeight="96.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../New%20folder/remittance.png" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="151.0" text="REMITTANCE" textAlignment="CENTER" textFill="#fcf2f2">
+            <font>
+               <Font name="Arial Bold" size="21.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </HBox>
+   <HBox fx:id="quatationButton" layoutX="830.0" layoutY="191.0" prefHeight="94.0" prefWidth="234.0" style="-fx-background-color: rose;">
+      <children>
+         <ImageView fitHeight="96.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../New%20folder/quatation.png" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="151.0" text="QUATATION" textAlignment="CENTER" textFill="#fcf2f2">
+            <font>
+               <Font name="Arial Bold" size="21.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </HBox>
+   <HBox fx:id="invoiceButton" layoutX="830.0" layoutY="313.0" prefHeight="94.0" prefWidth="234.0" style="-fx-background-color: rose;">
+      <children>
+         <ImageView fitHeight="96.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../New%20folder/invoice_10106255.png" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="151.0" text="INVOICE" textAlignment="CENTER" textFill="#fcf2f2">
+            <font>
+               <Font name="Arial Bold" size="21.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </HBox>
+   <HBox fx:id="EnviButton" layoutX="840.0" layoutY="448.0" prefHeight="94.0" prefWidth="272.0" style="-fx-background-color: rose;">
+      <children>
+         <ImageView fitHeight="96.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../New%20folder/environmant.png" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="174.0" text="ENVIRONMENT" textAlignment="CENTER" textFill="#fcf2f2">
+            <font>
+               <Font name="Arial Bold" size="21.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </HBox>
+   <HBox fx:id="settingButton" layoutX="222.0" layoutY="590.0" prefHeight="94.0" prefWidth="234.0" style="-fx-background-color: rose;">
+      <children>
+         <ImageView fitHeight="96.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../New%20folder/setting_1186255.png" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="151.0" text="SETTING" textAlignment="CENTER" textFill="#f7f1f1">
+            <font>
+               <Font name="Arial Bold" size="21.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </HBox>
+   <HBox fx:id="logoutButton" layoutX="522.0" layoutY="598.0" prefHeight="94.0" prefWidth="234.0" style="-fx-background-color: rose;">
+      <children>
+         <ImageView fitHeight="67.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../New%20folder/logout.png" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="76.0" prefWidth="143.0" text="LOGOUT" textAlignment="CENTER" textFill="#f7f1f1">
+            <font>
+               <Font name="Arial Bold" size="21.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </HBox>
+   <ImageView blendMode="SRC_ATOP" fitHeight="122.0" fitWidth="182.0" layoutX="488.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
+   <HBox fx:id="cancelButton" layoutX="811.0" layoutY="598.0" prefHeight="94.0" prefWidth="234.0" style="-fx-background-color: rose;">
+      <children>
+         <ImageView fitHeight="67.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../New%20folder/cancel.png" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="76.0" prefWidth="143.0" text="CANCEL" textAlignment="CENTER" textFill="#f7f1f1">
+            <font>
+               <Font name="Arial Bold" size="21.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </HBox>
+</AnchorPane>
